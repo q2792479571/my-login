@@ -46,11 +46,10 @@ $(function(){
             urtip.text('不能包含中文/空格以及长度不能超过12位数')
         }
     }
-    // 拼接url
-    $.ajaxPrefilter(function(option){
-        option.url = 'http://api-breakingnews-web.itheima.net'+option.url
-        console.log(option.url);
-    })
+    // $.ajaxPrefilter(function(options) {
+    //     // 在发起真正的 Ajax 请求之前，统一拼接请求的根路径
+    //     options.url = 'http://api-breakingnews-web.itheima.net' + options.url
+    //   })
     // 注册接口
     var layer =layui.layer
     $("#btn_reg").on('click',function(e){
@@ -80,7 +79,8 @@ $(function(){
                 layer.msg(res.message)
                 // 跳转
                 location.href = '/index.html'
-            }
+            },
+            
         })
     })
 })
