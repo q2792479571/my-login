@@ -27,8 +27,9 @@
                         <span class="text-avative">A</span>个人中心
                     </a>
                     <dl class="layui-nav-child">
-                        <dd><a href="">基本资料</a></dd>
-                        <dd><a href="">安全设置</a></dd>
+                        <dd><a href="/user/user_info.html" target="fm">基本资料</a></dd>
+                        <dd><a href="/user/user_psw.html" target="fm">更换头像</a></dd>
+                        <dd><a href="/user/avative.html" target="fm">重置密码</a></dd>
                     </dl>
                 </li>
                 <li class="layui-nav-item" lay-header-event="menuRight" lay-unselect id="esc">
@@ -68,9 +69,9 @@
                     <li class="layui-nav-item">
                         <a href="javascript:;"><span class="iconfont">&#xe614;</span>个人中心</a>
                         <dl class="layui-nav-child">
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-friends"></i>基本资料</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-picture-fine"></i>更换头像</a></dd>
-                            <dd><a href="javascript:;"><i class="layui-icon layui-icon-username"></i>重置密码</a></dd>
+                            <dd><a href="user/user_info.html" target="fm"><i class="layui-icon layui-icon-friends"></i>基本资料</a></dd>
+                            <dd><a href="/user/avative.html" target="fm"><i class="layui-icon layui-icon-picture-fine"></i>更换头像</a></dd>
+                            <dd><a href="/user/user_psw.html" target="fm"><i class="layui-icon layui-icon-username"></i>重置密码</a></dd>
                         </dl>
                     </li>
                 </ul>
@@ -89,6 +90,7 @@
     <script src="assets/lib/jquery.js"></script>
     <!-- 拼接接口的js文件 -->
     <script src="assets/js/baseApi.js"></script>
+    <script src="assets/lib/layui/layui.js"></script>
     <script src="assets/js/index.js"></script>
 </body>
 

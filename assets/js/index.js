@@ -1,6 +1,5 @@
-$(function () {
-    getApi()
-})
+getApi()
+// 获取用户信息
 function getApi() {
     $.ajax({
         method: 'GET',
